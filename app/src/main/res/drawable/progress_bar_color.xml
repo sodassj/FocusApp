@@ -1,0 +1,20 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#D3D3D3"/> <!-- Color de fondo de la barra -->
+            <corners android:radius="10dp"/> <!-- Bordes redondeados (opcional) -->
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <shape>
+            <solid android:color="#B0BEC5"/> <!-- Color de progreso secundario (si lo usas) -->
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <shape>
+            <solid android:color="#00BCD4"/> <!-- Color del progreso -->
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+</layer-list>

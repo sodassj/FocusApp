@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmenu5"
+    tools:context=".MainMenuActivity">
+
+    <!-- Logo de la aplicación -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="Logo" />
+
+    <!-- Nombre de la persona -->
+    <TextView
+        android:id="@+id/personName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Principal"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/logoImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Contenedor para las opciones -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:backgroundTint="@color/light_blue"
+        app:layout_constraintTop_toBottomOf="@id/personName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <!-- Botón para "Tiempo en Apps" -->
+            <Button
+                android:id="@+id/viewTasksButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tiempo en Apps"
+                android:drawableLeft="@drawable/ic_time_apps"
+                android:drawablePadding="12dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="@color/buttonBlue" />
+
+            <!-- Botón para "Pomodoro" -->
+            <Button
+                android:id="@+id/pomodoroButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pomodoro"
+                android:drawableLeft="@drawable/ic_pomodoro"
+                android:drawablePadding="12dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="@color/buttonGreen" />
+
+            <!-- Botón para "Modo Focus" -->
+            <Button
+                android:id="@+id/focusModeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modo Focus"
+                android:drawableLeft="@drawable/ic_focus_mode1"
+                android:drawablePadding="12dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="@color/buttonOrange" />
+
+            <!-- Botón para "Agregar Tarea" -->
+            <Button
+                android:id="@+id/addTaskButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agregar Tarea"
+                android:drawableLeft="@drawable/ic_add_task"
+                android:drawablePadding="12dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/buttonRed" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

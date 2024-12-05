@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PomodoroButton">
+        <item name="android:background">@drawable/rounded_button</item>  <!-- Fondo redondeado -->
+        <item name="android:textColor">@android:color/white</item>         <!-- Color de texto blanco -->
+        <item name="android:paddingStart">16dp</item>                      <!-- Padding a la izquierda -->
+        <item name="android:paddingEnd">16dp</item>                        <!-- Padding a la derecha -->
+        <item name="android:textSize">18sp</item>                          <!-- Tamaño del texto -->
+    </style>
+</resources>
